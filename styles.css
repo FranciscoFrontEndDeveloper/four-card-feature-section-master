@@ -37,6 +37,7 @@ html {
   height: 100vh;
   overflow: visible;
   row-gap: 20px;
+  justify-items: center;
 }
 .contanerFourCards div:nth-child(1) {
   width: 100%;
