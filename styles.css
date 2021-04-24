@@ -1,3 +1,4 @@
+@import url(https://fonts.google.com/specimen/Poppins);
 html {
   box-sizing: border-box;
 }
@@ -17,6 +18,8 @@ html {
   display: grid;
   grid-template-rows: 1fr auto;
   overflow: scroll;
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
 }
 
 .containerMain {
@@ -35,30 +38,97 @@ html {
   overflow: visible;
   row-gap: 20px;
 }
+.contanerFourCards div {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/2;
+}
+.contanerFourCards div:nth-child(1) {
+  grid-row: 1/2;
+}
+.contanerFourCards div:nth-child(2) {
+  grid-row: 2/3;
+}
+.contanerFourCards div:nth-child(3) {
+  grid-row: 3/4;
+}
+.contanerFourCards div:nth-child(4) {
+  grid-row: 4/5;
+}
+.contanerFourCards div:nth-child(5) {
+  grid-row: 5/6;
+}
 
-.containerCardTitle h1, .containerCardTitle p {
+.containerCardTitle {
+  display: grid;
+  justify-items: center;
+}
+.containerCardTitle h1, .containerCardTitle p, .containerCardTitle h3 {
   text-align: center;
+}
+.containerCardTitle h1 {
+  font-weight: 600;
+  padding: 10px 0;
+}
+.containerCardTitle h3 {
+  font-weight: 200;
+  color: #4c4e61;
+  font-size: 24px;
+}
+.containerCardTitle p {
+  font-weight: 200;
+  color: #a3a5ae;
+  font-size: 15px;
+  width: 90%;
 }
 
 .containerCard {
-  padding: 10px 20px;
+  padding: 20px 30px;
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  box-shadow: 0px 6px 10px -1px #000000;
+  box-shadow: 0px 6px 10px -1px #7a7a7a;
   border-radius: 5px;
+  background: #fafafa;
 }
 .containerCard h3, .containerCard p {
   text-align: left;
 }
-.containerCard img {
-  width: 30px;
-  height: 30px;
-  border: 1px solid black;
+.containerCard h3 {
+  font-weight: 600;
+  font-size: 15px;
+  color: #4c4e61;
+}
+.containerCard p {
+  font-weight: 200;
+  color: #a3a5ae;
+  font-size: 12px;
+  padding: 10px 0 20px 0;
+  line-height: 2;
+}
+.containerCard div {
+  display: grid;
+  justify-items: end;
+}
+.containerCard div img {
+  width: 40px;
+  height: 40px;
 }
 
-.cardBorderGreen {
-  border-top: 1px solid #000;
+.cardBorderCyan {
+  border-top: 2px solid #45d3d3;
+}
+
+.cardBorderRed {
+  border-top: 2px solid #ea5353;
+}
+
+.cardBorderOrange {
+  border-top: 2px solid #fcaf4a;
+}
+
+.cardBorderBlue {
+  border-top: 2px solid #549ef2;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
