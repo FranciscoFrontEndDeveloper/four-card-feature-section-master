@@ -78,7 +78,7 @@ html {
 .containerCardTitle p {
   font-weight: 200;
   color: #a3a5ae;
-  font-size: 15px;
+  font-size: 14px;
   width: 90%;
 }
 
@@ -102,9 +102,9 @@ html {
 .containerCard p {
   font-weight: 200;
   color: #a3a5ae;
-  font-size: 12px;
+  font-size: 14px;
   padding: 10px 0 20px 0;
-  line-height: 2;
+  line-height: 1.5;
 }
 .containerCard div {
   display: grid;
@@ -116,19 +116,19 @@ html {
 }
 
 .cardBorderCyan {
-  border-top: 2px solid #45d3d3;
+  border-top: 4px solid #45d3d3;
 }
 
 .cardBorderRed {
-  border-top: 2px solid #ea5353;
+  border-top: 4px solid #ea5353;
 }
 
 .cardBorderOrange {
-  border-top: 2px solid #fcaf4a;
+  border-top: 4px solid #fcaf4a;
 }
 
 .cardBorderBlue {
-  border-top: 2px solid #549ef2;
+  border-top: 4px solid #549ef2;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
