@@ -136,9 +136,10 @@ html {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .contanerFourCards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 40%);
     grid-template-rows: auto auto 1fr;
     justify-items: center;
+    justify-content: center;
   }
   .contanerFourCards div:nth-child(1) {
     grid-column: 1/3;
@@ -163,8 +164,11 @@ html {
 }
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   .contanerFourCards {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: 15% repeat(2, 30%);
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
   }
   .contanerFourCards div:nth-child(1) {
     grid-column: 1/4;
@@ -173,17 +177,46 @@ html {
   .contanerFourCards div:nth-child(2) {
     grid-column: 1/2;
     grid-row: 2/4;
+    justify-self: end;
   }
   .contanerFourCards div:nth-child(3) {
     grid-column: 2/3;
     grid-row: 2/3;
+    align-self: end;
   }
   .contanerFourCards div:nth-child(4) {
-    grid-column: 3/4;
-    grid-row: 2/4;
-  }
-  .contanerFourCards div:nth-child(5) {
     grid-column: 2/3;
     grid-row: 3/4;
+    align-self: start;
   }
+  .contanerFourCards div:nth-child(5) {
+    grid-column: 3/4;
+    grid-row: 2/4;
+    justify-self: start;
+  }
+
+  .containerCardTitle p {
+    width: 45%;
+  }
+}
+.containerFooter {
+  display: grid;
+  justify-items: center;
+  background: #000;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  padding: 10px 0;
+}
+.containerFooter p {
+  color: #fff;
+  text-align: center;
+}
+.containerFooter a {
+  color: #FF3F00;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.containerFooter:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */
